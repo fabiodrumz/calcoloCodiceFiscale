@@ -1,5 +1,3 @@
-//first comment
-
 #include <iostream>
 #include <string>
 
@@ -59,4 +57,5 @@ int main() {
     cout << "Il codice fiscale calcolato è: " << codiceFiscale << endl;
 
     return 0;
+
 }
