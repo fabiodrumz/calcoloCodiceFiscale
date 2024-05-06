@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 
-
 using namespace std;
 
 string calcolaCodiceFiscale(string nome, string cognome, int giorno, int mese, int anno, char sesso) {
