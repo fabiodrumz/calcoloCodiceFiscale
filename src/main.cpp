@@ -1,9 +1,11 @@
 #include <iostream>
 #include <string>
+#include <cmath>
 
 using namespace std;
 
 string calcolaCodiceFiscale(string nome, string cognome, int giorno, int mese, int anno, char sesso) {
+
     // Array di vocali per il calcolo del codice fiscale
     const char vocali[] = {'A', 'E', 'I', 'O', 'U'};
     
@@ -36,6 +38,7 @@ string calcolaCodiceFiscale(string nome, string cognome, int giorno, int mese, i
 }
 
 int main() {
+
     string nome, cognome;
     int giorno, mese, anno;
     char sesso;
@@ -53,8 +56,10 @@ int main() {
     cout << "Inserisci il sesso (M per maschio, F per femmina): ";
     cin >> sesso;
 
+
     string codiceFiscale = calcolaCodiceFiscale(nome, cognome, giorno, mese, anno, sesso);
     cout << "Il codice fiscale calcolato è: " << codiceFiscale << endl;
+
 
     return 0;
 
