@@ -3,6 +3,7 @@
 #include <cmath>
 #include <vector>
 
+
 using namespace std;
 
 string calcolaCodiceFiscale(string nome, string cognome, int giorno, int mese, int anno, char sesso) {
@@ -57,10 +58,8 @@ int main() {
     cout << "Inserisci il sesso (M per maschio, F per femmina): ";
     cin >> sesso;
 
-
     string codiceFiscale = calcolaCodiceFiscale(nome, cognome, giorno, mese, anno, sesso);
     cout << "Il codice fiscale calcolato è: " << codiceFiscale << endl;
-
 
     return 0;
 
