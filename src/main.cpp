@@ -6,31 +6,6 @@
 
 using namespace std;
 
-
-string calcolaCodiceFiscale(string nome, string cognome, int giorno, int mese, int anno, char sesso) {
-
-    // Array di vocali per il calcolo del codice fiscale
-    const char vocali[] = {'A', 'E', 'I', 'O', 'U'};
-    
-
-    // Costruzione del codice fiscale
-    string codiceFiscale = "";
-    
-
-    // Parte del codice fiscale derivata dal cognome
-    codiceFiscale += cognome.substr(0, 3);
-    
-
-    // Parte del codice fiscale derivata dal nome
-    int contatore = 0;
-    for (char lettera : nome) {
-        if (contatore == 3)
-            break;
-        if (lettera != 'A' && lettera != 'E' && lettera != 'I' && lettera != 'O' && lettera != 'U') {
-            codiceFiscale += lettera;
-            contatore++;
-        }
-    }
     
 
     // Parte del codice fiscale derivata dalla data di nascita
