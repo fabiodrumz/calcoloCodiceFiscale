@@ -7,7 +7,21 @@
 using namespace std;
 
     
+    // Parte del codice fiscale derivata dalla data di nascita
+    codiceFiscale += to_string(anno % 100); // Anno solo con le ultime due cifre
+    codiceFiscale += (mese < 10) ? '0' + to_string(mese) : to_string(mese); // Mese
+    codiceFiscale += (giorno < 10) ? '0' + to_string(giorno) : to_string(giorno); // Giorno    // Parte del codice fiscale derivata dalla data di nascita
+    codiceFiscale += to_string(anno % 100); // Anno solo con le ultime due cifre
+    codiceFiscale += (mese < 10) ? '0' + to_string(mese) : to_string(mese); // Mese
+    codiceFiscale += (giorno < 10) ? '0' + to_string(giorno) : to_string(giorno); // Giorno    // Parte del codice fiscale derivata dalla data di nascita
+    codiceFiscale += to_string(anno % 100); // Anno solo con le ultime due cifre
+    codiceFiscale += (mese < 10) ? '0' + to_string(mese) : to_string(mese); // Mese
+    codiceFiscale += (giorno < 10) ? '0' + to_string(giorno) : to_string(giorno); // Giorno
 
+    HO
+    FATTO
+    DELLE
+    MODIFICHE
     // Parte del codice fiscale derivata dalla data di nascita
     codiceFiscale += to_string(anno % 100); // Anno solo con le ultime due cifre
     codiceFiscale += (mese < 10) ? '0' + to_string(mese) : to_string(mese); // Mese
